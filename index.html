@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangi Gumball Karakterisin?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="app">
+    <section class="hero">
+      <div class="badge">Kişilik Testi</div>
+      <h1>Hangi Gumball Karakterisin?</h1>
+      <p>15 soruyu cevapla, Elmore evrenindeki ruh eşini bul.</p>
+      <button id="startBtn">Teste Başla</button>
+    </section>
+
+    <section class="quiz hidden" id="quizBox">
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <p class="counter" id="counter"></p>
+      <h2 id="questionText"></h2>
+
+      <div class="answers" id="answers"></div>
+    </section>
+
+    <section class="result hidden" id="resultBox">
+      <div class="result-card">
+        <img id="characterImage" src="" alt="Karakter" />
+        <h2 id="characterName"></h2>
+        <p id="characterDesc"></p>
+        <button onclick="restartQuiz()">Tekrar Dene</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
